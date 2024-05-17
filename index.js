@@ -17,6 +17,7 @@ const checkweather = async(city) => {
         document.querySelector(".humidity").innerHTML = data.main.humidity + "%";
         document.querySelector(".wind").innerHTML = data.wind.speed + "km/h";
     
+
         // weatherIcon.src= `images/${(data.weather[0].main)}.png`;
         if(data.weather[0].main == "Clouds"){
             weatherIcon.src = "images/clouds.png";
@@ -39,12 +40,8 @@ const checkweather = async(city) => {
         document.querySelector(".error").style.display = "none";
         document.querySelector(".weather").style.display= "block";
     }
-
-   
-    
 }
 
 searchBtn.addEventListener("click", () => {
     checkweather(searchBox.value);
 })
-
