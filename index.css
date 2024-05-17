@@ -26,6 +26,16 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+@media (max-width: 460px) {
+  .search {
+    flex-direction: column;
+    row-gap: 15px;
+    justify-content: center;
+  }
+
+  .search-bar {
+    width: 100%;
+  }
 
 .search input {
   border: 0;
@@ -76,6 +86,22 @@ body {
   justify-content: space-between;
   padding: 0 20px;
   margin-top: 50px;
+}
+
+@media (max-width: 450px) {
+  .details {
+    flex-direction: column;
+    row-gap: 15px;
+    text-align: center;
+  }
+  .col {
+    flex-direction: column;
+  }
+  .img-cond {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
 .col {
